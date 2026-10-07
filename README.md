@@ -20,21 +20,17 @@ Do not use this project for unauthorized access, disruption, interception, crede
 
 ## Installation — Termux
 
-### 1. Update Termux
+```
+pkg update -y && pkg upgrade -y
 
-`pkg update -y && pkg upgrade -y`
 
-### 2. Install required packages
+pkg install git python openssl curl wget -y
 
-`pkg install git python openssl curl wget -y`
+pip install -r requirements.txt
 
-### 3. Install Python dependencies
+python app/main.py
+```
 
-`pip install -r requirements.txt`
-
-### 4. Run WiFiSentinel
-
-`python app/main.py`
 
 ---
 
